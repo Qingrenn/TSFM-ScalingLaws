@@ -1,0 +1,870 @@
+- _target_: tsfm.data.builder.ConcatDatasetBuilder
+  _args_:
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: m1_monthly
+      offset: -7777
+      windows: 1
+      distance: 18
+      prediction_length: 18
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: vehicle_trips_with_missing
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: nn5_weekly
+      offset: -7777
+      windows: 1
+      distance: 8
+      prediction_length: 8
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: tourism_monthly
+      offset: -7777
+      windows: 1
+      distance: 24
+      prediction_length: 24
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: monash_m3_other
+      offset: -7777
+      windows: 1
+      distance: 8
+      prediction_length: 8
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: cif_2016_12
+      offset: -7777
+      windows: 1
+      distance: 12
+      prediction_length: 12
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: us_births
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: sunspot_with_missing
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: hospital
+      offset: -7777
+      windows: 1
+      distance: 12
+      prediction_length: 12
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: kdd_cup_2018_with_missing
+      offset: -7777
+      windows: 1
+      distance: 168
+      prediction_length: 168
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: pedestrian_counts
+      offset: -7777
+      windows: 1
+      distance: 24
+      prediction_length: 24
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: m4_quarterly
+      offset: -7777
+      windows: 1
+      distance: 8
+      prediction_length: 8
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: m4_hourly
+      offset: -7777
+      windows: 1
+      distance: 48
+      prediction_length: 48
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: covid_deaths
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: m4_weekly
+      offset: -7777
+      windows: 1
+      distance: 13
+      prediction_length: 13
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: weather
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: rideshare_with_missing
+      offset: -7777
+      windows: 1
+      distance: 168
+      prediction_length: 168
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: cif_2016_6
+      offset: -7777
+      windows: 1
+      distance: 6
+      prediction_length: 6
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: fred_md
+      offset: -7777
+      windows: 1
+      distance: 12
+      prediction_length: 12
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: nn5_daily_with_missing
+      offset: -7777
+      windows: 1
+      distance: 56
+      prediction_length: 56
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: tourism_quarterly
+      offset: -7777
+      windows: 1
+      distance: 8
+      prediction_length: 8
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: monash_m3_monthly
+      offset: -7777
+      windows: 1
+      distance: 18
+      prediction_length: 18
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: traffic_hourly
+      offset: -7777
+      windows: 1
+      distance: 168
+      prediction_length: 168
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: bitcoin_with_missing
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: saugeenday
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: car_parts_with_missing
+      offset: -7777
+      windows: 1
+      distance: 12
+      prediction_length: 12
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: m4_daily
+      offset: -7777
+      windows: 1
+      distance: 14
+      prediction_length: 14
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: m4_monthly
+      offset: -7777
+      windows: 1
+      distance: 18
+      prediction_length: 18
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: temperature_rain_with_missing
+      offset: -7777
+      windows: 1
+      distance: 30
+      prediction_length: 30
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Monash
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+- _target_: tsfm.data.builder.ConcatDatasetBuilder
+  _args_:
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: ETTh1
+      offset: 11520
+      windows: 25.0
+      distance: 192
+      prediction_length: 192
+      context_length: 1000
+      patch_size: 32
+      storage_path: dataset_test/LSF
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: ETTh2
+      offset: 11520
+      windows: 25.0
+      distance: 192
+      prediction_length: 192
+      context_length: 1000
+      patch_size: 32
+      storage_path: dataset_test/LSF
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: ETTm1
+      offset: 46080
+      windows: 117.0
+      distance: 192
+      prediction_length: 192
+      context_length: 1000
+      patch_size: 32
+      storage_path: dataset_test/LSF
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: ETTm2
+      offset: 46080
+      windows: 117.0
+      distance: 192
+      prediction_length: 192
+      context_length: 1000
+      patch_size: 32
+      storage_path: dataset_test/LSF
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: electricity
+      offset: 21044
+      windows: 22.0
+      distance: 192
+      prediction_length: 192
+      context_length: 1000
+      patch_size: 32
+      storage_path: dataset_test/LSF
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: weather
+      offset: 42156
+      windows: 49.0
+      distance: 192
+      prediction_length: 192
+      context_length: 1000
+      patch_size: 32
+      storage_path: dataset_test/LSF
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+- _target_: tsfm.data.builder.ConcatDatasetBuilder
+  _args_:
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: wiki-rolling_nips
+      offset: -7777
+      windows: 1
+      distance: 158
+      prediction_length: 158
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: SelfRegulationSCP2
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: australian_electricity_demand
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: MotorImagery
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: IEEEPPG
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: AtrialFibrillation
+      offset: -7777
+      windows: 1
+      distance: 128
+      prediction_length: 128
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: Q-TRAFFIC
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: buildings_900k
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: BIDMC32HR
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: bdg-2_bear
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: traffic_weekly
+      offset: -7777
+      windows: 1
+      distance: 19
+      prediction_length: 19
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: largest_2021
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: bdg-2_panther
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: borg_cluster_data_2011
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: TDBrain
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: largest_2020
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: PEMS08
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: gfc17_load
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: azure_vm_traces_2017
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: largest_2017
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: PigCVP
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: PEMS_BAY
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: largest_2019
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: largest_2018
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: era5_1989
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: SelfRegulationSCP1
+      offset: -7777
+      windows: 1
+      distance: 179
+      prediction_length: 179
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: kaggle_web_traffic_weekly
+      offset: -7777
+      windows: 1
+      distance: 22
+      prediction_length: 22
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: bdg-2_fox
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: era5_1990
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: PigArtPressure
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: alibaba_cluster_trace_2018
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: cmip6_1850
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: cmip6_1855
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: favorita_sales
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: PEMS04
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: LOOP_SEATTLE
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]
+    - _target_: tsfm.data.builder.simple.SimpleEvalDatasetBuilder
+      dataset: PEMS07
+      offset: -7777
+      windows: 1
+      distance: 192
+      prediction_length: 192
+      context_length: -7777
+      patch_size: 32
+      storage_path: dataset_test/Lotsa1B
+      sample_time_series:
+        _target_: tsfm.data.dataset.SampleTimeSeriesType
+        _args_: ["proportional"]

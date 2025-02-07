@@ -1,0 +1,59 @@
+[
+  {
+    "LOOP_SEATTLE": [0],
+    "PEMS04": [2],
+    "PEMS07": [0],
+    "PEMS08": [0, 2],
+    "PEMS_BAY": [0],
+    "Q-TRAFFIC": [0],
+    "alibaba_cluster_trace_2018": [1],
+    "australian_electricity_demand": [0],
+    "bdg-2_bear": [0],
+    "bdg-2_fox": [0],
+    "bdg-2_panther": [0],
+    "borg_cluster_data_2011": [1],
+    "cmip6_1850": [
+      11, 13, 14, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 26, 27, 28, 29, 30, 31, 32,
+      33, 34, 35, 36, 37, 38
+    ],
+    "cmip6_1855": [
+      11, 13, 14, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 26, 27, 28, 29, 30, 31, 32,
+      33, 34, 35, 36, 37, 38
+    ],
+    "covid19_energy": [0],
+    "elecdemand": [0],
+    "era5_1989": [9, 0, 3, 4, 5, 6, 7, 8, 17, 24, 25, 26, 27, 28, 29, 30],
+    "era5_1990": [9, 0, 3, 4, 5, 6, 7, 8, 17, 24, 25, 26, 27, 28, 29, 30],
+    "elf": [0],
+    "gfc14_load": [0],
+    "gfc17_load": [0],
+    "largest_2017": [0],
+    "largest_2018": [0],
+    "largest_2019": [0],
+    "largest_2020": [0],
+    "largest_2021": [0],
+    "pdb": [0],
+    "sceaux": [0],
+    "solar_power": [0],
+    "spain": [0],
+    "traffic_weekly": [0]
+  },
+  {
+    "kaggle_web_traffic_weekly": [0],
+    "azure_vm_traces_2017": [0],
+    "wiki-rolling_nips": [0],
+    "favorita_sales": [0],
+    "buildings_900k": [0]
+  },
+  {
+    "TDBrain": [],
+    "MotorImagery": [],
+    "IEEEPPG": [],
+    "SelfRegulationSCP1": [],
+    "SelfRegulationSCP2": [],
+    "PigArtPressure": [],
+    "PigCVP": [],
+    "BIDMC32HR": [],
+    "AtrialFibrillation": []
+  }
+]
