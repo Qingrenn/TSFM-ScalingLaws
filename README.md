@@ -4,6 +4,16 @@
 
 <div align="center">
 
+![](https://img.shields.io/github/last-commit/Qingrenn/TSFM-ScalingLaws?color=green)
+![](https://img.shields.io/github/stars/Qingrenn/TSFM-ScalingLaws?color=yellow)
+![](https://img.shields.io/github/forks/Qingrenn/TSFM-ScalingLaws?color=lightblue)
+![](https://img.shields.io/badge/PRs-Welcome-green)
+
+</div>
+
+
+<div align="center">
+
 **[<a href="https://arxiv.org/abs/2410.12360">Paper Page</a>]**
 **[<a href="https://mp.weixin.qq.com/s/tSN2gSajYTpS9cDcGlmJlw">时序人中文解读</a>]**
 
@@ -17,7 +27,7 @@ pip install -r requirements.txt
 
 ## 2. 📚 Prepare the dataset
 
-**Download datasets** from the [Qingren/TSFMScalingLaws](https://huggingface.co/datasets/Qingren/TSFMScalingLaws). The directory organization structure is as follows:
+**Download datasets** from the [Qingren/TSFM-ScalingLaws-Dataset](https://huggingface.co/datasets/Qingren/TSFM-ScalingLaws-Dataset). The directory organization structure is as follows:
 
 ```bash
 - dataset_train
