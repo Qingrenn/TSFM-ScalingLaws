@@ -14,7 +14,8 @@
 
 <div align="center">
 
-**[<a href="https://arxiv.org/abs/2410.12360">Paper Page</a>]**
+**[<a href="https://arxiv.org/abs/2410.12360">Paper Page</a>]** 
+**[<a href="https://iclr.cc/virtual/2025/poster/27992">Poster Page</a>]**
 **[<a href="https://mp.weixin.qq.com/s/tSN2gSajYTpS9cDcGlmJlw">时序人中文解读</a>]**
 
 </div>
