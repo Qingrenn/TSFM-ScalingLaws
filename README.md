@@ -129,17 +129,39 @@ The well-trained models are available in the [PeacefulData/TSFM-ScalingLaws-Chec
 }
 ```
 
-## Related Resources
-* TimeMixer++: A General Time Series Pattern Machine for Universal Predictive Analysis, in arXiv 2024. [\[paper\]](https://arxiv.org/abs/2410.16032) [\[GitHub Repo\]](https://github.com/kwuking/TimeMixer)
-* Foundation Models for Time Series Analysis: A Tutorial and Survey, in *KDD*
-  2024. [\[paper\]](https://arxiv.org/abs/2403.14735) [\[Tutorial\]](https://wenhaomin.github.io/FM4TS.github.io/)
-* What Can Large Language Models Tell Us about Time Series Analysis, in *ICML*
-  2024. [\[paper\]](https://arxiv.org/abs/2402.02713)
-* Self-Supervised Learning for Time Series Analysis: Taxonomy, Progress, and Prospects, in *TPAMI*
-  2024. [\[paper\]](https://arxiv.org/abs/2306.10125) [\[Website\]](https://github.com/qingsongedu/Awesome-SSL4TS)
-* Transformers in Time Series: A Survey, in *IJCAI*
-  2023. [\[paper\]](https://arxiv.org/abs/2202.07125) [\[GitHub Repo\]](https://github.com/qingsongedu/time-series-transformers-review)
-* A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection, in *TPAMI* 2024. [\[paper\]](https://arxiv.org/abs/2307.03759) [\[Website\]](https://github.com/KimMeen/Awesome-GNN4TS)
+## Further Reading
+1, [**Estimating Time Series Foundation Model Transferability via In-Context Learning**](https://arxiv.org/pdf/2509.23695), *arXiv* 2025.
+
+**Authors**: Qingren Yao, Ming Jin, Chengqi Zhang, Chao-Han Huck Yang, Jun Qi, Shirui Pan
+
+```bibtex
+@article{yao2025estimating,
+  title={Estimating Time Series Foundation Model Transferability via In-Context Learning},
+  author={Yao, Qingren and Jin, Ming and Zhang, Chengqi and Yang, Chao-Han Huck and Qi, Jun and Pan, Shirui},
+  journal={arXiv preprint arXiv:2509.23695},
+  year={2025}
+}
+```
+
+2, [**Time-MoE: Billion-Scale Time Series Foundation Models with Mixture of Experts**](https://arxiv.org/pdf/2409.16040), in *ICLR* 2025.
+[\[GitHub Repo\]](https://github.com/Time-MoE/Time-MoE)
+
+**Authors**: Xiaoming Shi, Shiyu Wang, Yuqi Nie, Dianqi Li, Zhou Ye, Qingsong Wen, Ming Jin
+
+```bibtex
+@inproceedings{shi2024time,
+  title={Time-moe: Billion-scale time series foundation models with mixture of experts},
+  author={Shi, Xiaoming and Wang, Shiyu and Nie, Yuqi and Li, Dianqi and Ye, Zhou and Wen, Qingsong and Jin, Ming},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025}
+}
+```
+
+🌟 Please also check out our team’s latest research projects listed below.
+* TimeOmni-1: Incentivizing Complex Reasoning with Time Series in Large Language Models [\[paper\]](https://arxiv.org/pdf/2509.24803)
+* T2S: High-resolution Time Series Generation with Text-to-Series Diffusion Models, in IJCAI 2025. [\[paper\]](https://arxiv.org/pdf/2505.02417) [\[GitHub Repo\]](https://github.com/WinfredGe/T2S)
+* Time-MQA: Time Series Multi-Task Question Answering with Context Enhancement, in ACL 2025. [\[paper\]](https://arxiv.org/pdf/2503.01875) [\[Hugging Face\]](https://huggingface.co/Time-MQA)
+* TimeMixer++: A General Time Series Pattern Machine for Universal Predictive Analysis, in ICLR 2025. [\[paper\]](https://arxiv.org/abs/2410.16032) [\[GitHub Repo\]](https://github.com/kwuking/TimeMixer)
 
 ## Acknowledgments
 
